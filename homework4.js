@@ -39,7 +39,7 @@ class Order
         }
     }
 }
-public class OrderService extends HttpServlet {
+public class OrderService {
     private static final
     long
     serialVersionUID = 1
@@ -88,10 +88,10 @@ final
 long
 serialVersionUID = 1
 L;
-public
-void doGet(HttpServletRequest
-request, HttpServletResponse
-response
+}
+public class OrderDetails
+{
+    public void doGet(HttpServletRequest request, HttpServletResponse response
 )
 throws
 ServletException, IOException
