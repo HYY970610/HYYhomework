@@ -3,7 +3,7 @@ namespace TheFirstConsoleProgram
     {
         class Program   ///新建程序时自动生成的类
         {
-            static void Main()//C#主函数
+            static void Main()//
         {
             Console.Write("a=");
             string a = Console.ReadLine();
