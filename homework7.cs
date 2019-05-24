@@ -95,11 +95,6 @@ static int main(){
     OrderService.Imoort();
     List<Order> OrderList = (from s instu orderby s.stuNOdescending select s).ToList<Order>();
 }
-//对订单程序中OrderService的各个Public方法添加测试用例
-
-//使用EF框架，将订单系统的OrderService中的增删改查方法，改为对MySQL数据库的操作，并调整原来订单系统的Winform代码，使这些操作正常工作。
-
-//基于.Net core和EF core框架，为订单系统编写Web API，实现订单功能的增删改查等各项功能。使用Postman对Web API进行测试。
 
 //新建对象然后调用GetTestGrp方法得到测试用例
 class Test4Ordsvce(){
@@ -115,3 +110,36 @@ class Test4Ordsvce(){
         return OrdGrp;
     }
 }
+
+//改进例5-31的画树程序，并使用Winform控件来调节参数
+private void button1_Click(object sender,EventArgs e)
+{
+    if(graphics==null)
+    graphics=this.CreateGraphics();
+    drawCayleyTree(10,200,310,100,-Math,PI/2);
+}
+private Graphics graphics;
+double th1=30 * Math.PI/100;
+double th2=20 * Math.PI/100;
+double per1=0.6;
+double per2=0.7;
+
+void drawCayleyTree{
+    int n,
+    double x0,double y0,double leng,double th}
+    {
+        if(n==0)
+        return;
+        double x1=x0+leng * Math.Cos(th);
+        double y1=y0+leng * Math.Sin(th);
+        drawLine(x0,y0,x1,y1);
+        drawCayleyTree(n -1,x1,y1,per1 * leng,th +th1);
+        drawCayleyTree(n -1,x1,y1,per2 * leng,th -th2);
+    }
+    void drawLine(double x0,double y0,double x1,double y1)
+    {
+        graphics.DrawLine{
+        Pens,Blue,
+        (int)x0,(int)y0,(int)x1,(int)y1
+        };
+    }
