@@ -39,25 +39,9 @@ class Order
         }
     }
 }
-public class OrderService {
-    private static final
-    long
-    serialVersionUID = 1
-    L;
-    public void
-
-    doGet(HttpServletRequest
-
-    request
-,
-    HttpServletResponse
-    response
-)
-    throws
-    ServletException
-,
-    IOException {
-    doPost(request, response);
+public class OrderService
+{
+    string delsql="delete from"
 }
 
 public
@@ -91,7 +75,7 @@ L;
 }
 public class OrderDetails
 {
-    public void doGet(HttpServletRequest request, HttpServletResponse response
+    string delsql=
 )
 throws
 ServletException, IOException
